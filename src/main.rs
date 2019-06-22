@@ -1,8 +1,8 @@
 extern crate interfaces2 as interfaces;
 
+use interfaces::Address;
 use interfaces::Interface;
 use interfaces::Kind;
-use interfaces::Address;
 
 fn main() {
     let ifaces = Interface::get_all().unwrap();
@@ -19,19 +19,19 @@ fn main() {
 
         for addr in &iface.addresses {
             match addr.kind {
-                Kind::Packet => {},
+                Kind::Packet => {}
                 Kind::Ipv4 => {
                     print!("{}", indent);
                     print!("inet ");
                     pr(*addr);
-                },
+                }
                 Kind::Ipv6 => {
                     print!("{}", indent);
                     print!("inet6 ");
                     pr(*addr);
-                },
-                Kind::Link => {},
-                _ => {},
+                }
+                Kind::Link => {}
+                _ => {}
             }
         }
 
