@@ -5,7 +5,7 @@ use interfaces::Interface;
 use interfaces::Kind;
 
 fn main() {
-    let ifaces = Interface::get_all().unwrap();
+    let ifaces = Interface::get_all().expect("Failed to get interfaces");
     for iface in &ifaces {
         let indent = " ".repeat(8);
         print!("{}:", iface.name);
@@ -15,7 +15,7 @@ fn main() {
             print!(" <DOWN>");
         }
 
-        println!("  mtu {}", iface.get_mtu().unwrap());
+        println!("  mtu {}", iface.get_mtu().expect("Failed to get MTU"));
 
         for addr in &iface.addresses {
             match addr.kind {
@@ -36,7 +36,13 @@ fn main() {
         }
 
         print!("{}", indent);
-        println!("ether {}", iface.hardware_addr().unwrap().as_string());
+        println!(
+            "ether {}",
+            iface
+                .hardware_addr()
+                .expect("Failed to get hardware address")
+                .as_string()
+        );
 
         println!(" ");
     }
