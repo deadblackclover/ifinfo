@@ -2,7 +2,14 @@
 name = "rust-ifconfig"
 version = "0.1.0"
 authors = ["DEADBLACKCLOVER <deadblackclover@protonmail.com>"]
+description = "Simple ifconfig placed on Rust"
 edition = "2018"
+license = "GPL-3.0"
+readme = "README.md"
+homepage = "https://github.com/deadblackclover/pc-beeper"
+repository = "https://github.com/deadblackclover/pc-beeper"
+keywords = ["ifconfig"]
+categories = ["network-programming", "os"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
