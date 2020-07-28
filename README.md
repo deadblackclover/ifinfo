@@ -1,3 +1,3 @@
-# rust-ifconfig
+# ifinfo
 
 Simple ifconfig placed on Rust 
