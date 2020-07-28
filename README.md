@@ -1,3 +1,3 @@
 # ifinfo
 
-Simple ifconfig placed on Rust 
+Simple ifconfig placed on Rust
