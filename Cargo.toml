@@ -6,8 +6,8 @@ description = "Simple ifconfig placed on Rust"
 edition = "2018"
 license = "GPL-3.0"
 readme = "README.md"
-homepage = "https://github.com/deadblackclover/pc-beeper"
-repository = "https://github.com/deadblackclover/pc-beeper"
+homepage = "https://github.com/deadblackclover/rust-ifconfig"
+repository = "https://github.com/deadblackclover/rust-ifconfig"
 keywords = ["ifconfig"]
 categories = ["network-programming", "os"]
 
